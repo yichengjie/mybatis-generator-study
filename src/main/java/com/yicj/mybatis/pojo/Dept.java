@@ -2,8 +2,14 @@ package com.yicj.mybatis.pojo;
 
 public class Dept {
     private Integer deptno;
-
     private String deptname;
+    
+    public Dept() {
+    	
+    }
+    public Dept(String deptname) {
+    	this.deptname = deptname ;
+    }
 
     public Integer getDeptno() {
         return deptno;
@@ -20,4 +26,9 @@ public class Dept {
     public void setDeptname(String deptname) {
         this.deptname = deptname == null ? null : deptname.trim();
     }
+	@Override
+	public String toString() {
+		return "Dept [deptno=" + deptno + ", deptname=" + deptname + "]";
+	}
+    
 }
