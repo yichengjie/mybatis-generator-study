@@ -24,7 +24,6 @@
         </environment>
     </environments>
     <mappers>
-    	<!-- <mapper resource="com/yicj/mybatis/dao/DeptDAO.xml"/> -->
         <package name="com.yicj.mybatis.mapper"></package>
     </mappers>
 </configuration>
